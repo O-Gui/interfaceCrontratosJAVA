@@ -1,0 +1,34 @@
+package br.com.guilherme.pagamento.impl;
+
+import br.com.guilherme.pagamentos.pagamento;
+
+public class pagamentoCartaoDeCredito implements pagamento {
+
+	private int numeroCartao;
+	private String titular;
+
+
+public pagamentoCartaoDeCredito(int numeroCartao, String titular) {
+		super();
+		this.numeroCartao = numeroCartao;
+		this.titular = titular;
+	}
+
+
+public void exibirInfoCartao() {
+	
+	System.out.println("numero do cartao: " + numeroCartao);
+	System.out.println("nome do titular: " + titular);
+	
+}
+
+
+
+	@Override
+	public void pagar(double valor) {
+		System.out.println("pagamento com cartão no valor: "+valor);
+	}
+
+
+
+}
