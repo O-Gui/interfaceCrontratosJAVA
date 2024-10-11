@@ -1,0 +1,9 @@
+package br.com.guilherme.pagamentos;
+
+public interface pagamento {
+	
+	public void pagar(double valor);
+	
+	
+
+}
