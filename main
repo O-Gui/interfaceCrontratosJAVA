@@ -1,0 +1,16 @@
+package br.com.guilherme.main;
+import br.com.guilherme.pagamento.impl.pagamentoCartaoDeCredito;
+import br.com.guilherme.pagamentos.pagamento;
+
+public class Main {
+
+	public static void main(String[] args) {
+	pagamentoCartaoDeCredito objpagCredito = new pagamentoCartaoDeCredito(1007,"guilherme");
+	objpagCredito.pagar(300);	
+	objpagCredito.exibirInfoCartao();
+	
+	
+	
+	}
+
+}
